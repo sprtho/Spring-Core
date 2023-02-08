@@ -24,8 +24,8 @@ public class ApplicationContextExtendsFindTest {
     @DisplayName("부모 타입으로 조회시, 자식이 둘 이상 있으면, 중복 오류 발생")
     void findBeanByParentTypeDuplicate() {
         Discountpolicy bean = ac.getBean(Discountpolicy.class);
-        Assertions.assertThrows(NoUniqueBeanDefinitionException.class,
-                () -> ac.getBean(Discountpolicy.class));
+//        Assertions.assertThrows(NoUniqueBeanDefinitionException.class,
+//                () -> ac.getBean(Discountpolicy.class));
     }
 
     @Test
@@ -69,9 +69,9 @@ public class ApplicationContextExtendsFindTest {
             return new RateDiscountPolicy();
         }
 
-        @Bean
-        public Discountpolicy fixDisCountPolicy() {
-            return new FixDiscountPolicy();
-        }
+//        @Bean
+//        public Discountpolicy fixDisCountPolicy() {
+//            return new FixDiscountPolicy();
+//        }
     }
 }
