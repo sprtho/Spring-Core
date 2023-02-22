@@ -9,7 +9,7 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 import static org.assertj.core.api.Assertions.assertThat;
-
+//prototype
 public class PrototypeTest {
 
     @Test
